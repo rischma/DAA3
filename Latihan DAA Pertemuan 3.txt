@@ -1,0 +1,219 @@
+aList=["John",33,"Toronto",True]
+print(aList)
+
+['John', 33, 'Toronto', True]
+
+===================================================================================================
+
+aList=["Chella Dhea Yunita",2020071011,"Informatika","Desain dan Analisis Algoritma",15,"Universitas Pembangunan Jaya"]
+print(aList)
+
+['Chella Dhea Yunita', 2020071011, 'Informatika', 'Desain dan Analisis Algoritma', 15, 'Universitas Pembangunan Jaya']
+
+===================================================================================================
+
+bin_colors=['Red','Green','Blue','Yellow']
+bin_colors[1]
+
+Green
+
+===================================================================================================
+
+aList=["Chella Dhea Yunita",2020071011,"Informatika","Desain dan Analisis Algoritma",15,"Universitas Pembangunan Jaya"]
+print(aList[0])
+
+Chella Dhea Yunita
+
+===================================================================================================
+
+bin_colors=['Red','Green','Blue','Yellow']
+bin_colors[0:2]
+
+['Red', 'Green']
+
+===================================================================================================
+
+bin_colors=['Red','Green','Blue','Yellow']
+for aColor in bin_colors:
+  print(aColor+"Square")
+
+RedSquare
+GreenSquare
+BlueSquare
+YellowSquare
+
+===================================================================================================
+
+bin_mahasiswa=['Rischma','Syifa']
+for aMahasiswa in bin_mahasiswa:
+  print("UPJ"+aMahasiswa)
+
+UPJRischma
+UPJSyifa
+
+===================================================================================================
+
+bin_colors=('Red','Green','Blue','Yellow')
+bin_colors[1]
+
+Green
+
+===================================================================================================
+
+bin_colors[2:]
+
+('Blue', 'Yellow')
+
+===================================================================================================
+
+bin_upj=('Universitas Pembangunan Jaya')
+print(bin_upj)
+
+Universitas Pembangunan Jaya
+
+===================================================================================================
+
+nested_tuple=([100],[200,400,600],[300],[400,800])
+nested_tuple[0]
+
+[100]
+
+===================================================================================================
+
+bin_colors={
+    "manual_color":"Yellow",
+    "approved_color":"Green",
+    "refused_color":"Red"
+}
+
+===================================================================================================
+
+print(bin_colors)
+{'manual_color':'Yellow','approved_color':'Green','refused_color':
+ 'Red'}
+
+['Red', 'Green', 'Blue', 'Yellow']
+{'approved_color': 'Green', 'manual_color': 'Yellow', 'refused_color': 'Red'}
+
+===================================================================================================
+
+bin_data={
+    "Nama":"Chella Dhea Yunita",
+    "NIM":2020071011,
+    "Prodi":"Informatika",
+    "Universitas":"UPJ"
+}
+print(bin_data)
+
+{'Nama': 'Chella Dhea Yunita', 'NIM': 2020071011, 'Prodi': 'Informatika', 'Universitas': 'UPJ'}
+
+===================================================================================================
+
+green={'grass','leaves'}
+print(green)
+
+{'leaves', 'grass'}
+
+===================================================================================================
+
+green={'grass','leaves','leaves'}
+print(green)
+
+{'leaves', 'grass'}
+
+===================================================================================================
+
+import pandas as pd
+df=pd.DataFrame([
+                 ['1','Fares',32,True],
+                 ['2','Elena',23,False],
+                 ['3','Steven',40,True]])
+
+===================================================================================================
+
+df.columns=['id','name','age','decision']
+df
+
+	id	name	age	decision
+0	1	Fares	32	True
+1	2	Elena	23	False
+2	3	Steven	40	True
+
+===================================================================================================
+
+df[['name','age']]
+
+	name	age
+0	Fares	32
+1	Elena	23
+2	Steven	40
+
+===================================================================================================
+
+df.iloc[:3]
+
+	id	name	age	decision
+0	1	Fares	32	True
+1	2	Elena	23	False
+2	3	Steven	40	True
+
+===================================================================================================
+
+import numpy as np
+myMatrix=np.array([[11,12,13],[21,22,23],[31,32,33]])
+print(myMatrix)
+
+[[11 12 13]
+ [21 22 23]
+ [31 32 33]]
+
+===================================================================================================
+
+class Stack:
+  def _init_(self):
+    self.items = []
+    def isEmpty(self):
+      return self.items == []
+      def push(self, item):
+        self.items.append(item)
+        def pop(self):
+          return self.items.pop()
+          def peek(self):
+            return self.items[len(self.items)-1]
+            def size(self):
+              return len(self.items)
+
+              stack = stack()
+              stack.push('Red')
+              stack.push('Green')
+              stack.push('Blue')
+              stack.push('Yellow')
+
+              print(stack.pop())
+
+              print(stack.isEmpty)
+
+===================================================================================================
+
+class queue(object):
+  def _init_(self):
+    self.items = []
+    def isEmpty(self):
+      return self.items == []
+      def enqueue(self, item):
+        self.items.insert(0, item)
+        def dequeue(self):
+          return sel.items.pop()
+          def size(self):
+            return len(self.items)
+
+            queue = queue()
+            queue.enqueue('Red')
+            queue.enqueue('Green')
+            queue.enqueue('Blue')
+            queue.enqueue('Yellow')
+
+            print(queue.size())
+
+            print(queue.dequeue())
+            print(queue,dequeue())
